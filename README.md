@@ -2,6 +2,7 @@
 
 Edit your current input text with AI.
 
+![menuWritingTool](https://github.com/user-attachments/assets/aff0eba9-1094-4ac9-8097-b3badb7e4050)
 
 ## Prerequisite
 
