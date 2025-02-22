@@ -1,0 +1,16 @@
+{
+	"dependencies": {
+		"4D AIKit": {
+			"github": "4d/4D-AIKit",
+			"tag": "0.0.4"
+		},
+		"4DPop Git": {
+			"github": "vdelachaux/4DPop-Git",
+			"version": "latest"
+		},
+		"4DPop": {
+			"github": "vdelachaux/4DPop",
+			"version": "latest"
+		}
+	}
+}
