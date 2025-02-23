@@ -63,7 +63,7 @@ Function translateIcon($lang : Text) : Text
 			return ""
 	End case 
 	
-Function onClick($formKey : Text)
+Function onClick($formKey : Text; $confirm : Boolean)
 	If (Not:C34(((Form event code:C388=On Clicked:K2:4) && (Right click:C712))))
 		return 
 	End if 
@@ -108,6 +108,12 @@ Function onClick($formKey : Text)
 		var $result:=$client.chat.create(cs:C1710.WritingTool.me[$menu.choice]).prompt($text)
 		
 		If ($result.success)
+			If ($confirm)
+				CONFIRM:C162($result.choice.message.text; "Accept"; "Ignore")
+				If (OK#1)
+					return 
+				End if 
+			End if 
 			Form:C1466[$formKey]:=Replace string:C233($fullText; $text; $result.choice.message.text)
 		End if 
 		
