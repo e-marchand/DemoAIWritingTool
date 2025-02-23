@@ -41,18 +41,31 @@
 					"left": 12,
 					"top": 13,
 					"width": 767,
-					"height": 705,
+					"height": 113,
 					"dataSource": "Form:C1466.text",
 					"events": [
 						"onClick"
 					],
 					"contextMenu": "none",
 					"method": "ObjectMethods/Input.4dm"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 7,
+					"top": 141,
+					"width": 772,
+					"height": 33,
+					"dataSource": "Form:C1466.text1",
+					"method": "ObjectMethods/Input1.4dm",
+					"events": [
+						"onClick"
+					],
+					"contextMenu": "none"
 				}
 			}
 		}
 	],
-	"geometryStamp": 9,
+	"geometryStamp": 12,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
