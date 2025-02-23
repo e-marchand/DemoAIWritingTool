@@ -20,7 +20,11 @@ If ((Form event code:C388=On Clicked:K2:4) && (Right click:C712))
 	var $menu:=cs:C1710.menu.new()
 	var $key : Text
 	For each ($key; cs:C1710.WritingTool.me.properties)
-		$menu.append(Uppercase:C13($key[[1]])+Substring:C12($key; 2); $key)
+		If ($key="|")
+			$menu.line()
+		Else 
+			$menu.append(Uppercase:C13($key[[1]])+Substring:C12($key; 2); $key)
+		End if 
 	End for each 
 	
 	var $trMenu:=cs:C1710.menu.new()
@@ -29,6 +33,7 @@ If ((Form event code:C388=On Clicked:K2:4) && (Right click:C712))
 		$trMenu.append(cs:C1710.WritingTool.me.translateIcon($lang)+" "+$lang; "translateTo"+$lang)
 	End for each 
 	
+	$menu.line()
 	$menu.append("Translate"; $trMenu)
 	
 	

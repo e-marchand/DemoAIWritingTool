@@ -38,7 +38,7 @@ property table : Text:=\
 +"Maintain the original context and information.Perform this task in the same language as the provided text."\
 +"Output ONLY the table without any comments, explanations, or analysis.Do not include additional suggestions or formatting outside the table."
 
-property properties:=["proofread"; "rewrite"; "friendly"; "professional"; "concise"; "summary"; "keyPoints"; "table"]
+property properties:=["proofread"; "rewrite"; "|"; "friendly"; "professional"; "concise"; "|"; "summary"; "keyPoints"; "table"]
 
 property translates:=["English"; "French"]
 
