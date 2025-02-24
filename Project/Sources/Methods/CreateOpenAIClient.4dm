@@ -6,4 +6,16 @@ If ((Folder:C1567(fk desktop folder:K87:19).file("apiKey").exists) && ($client.a
 	$client.apiKey:=Folder:C1567(fk desktop folder:K87:19).file("apiKey").getText()
 End if 
 
+If (Length:C16(String:C10($client.apiKey))=0)
+	$client.apiKey:=String:C10(Form:C1466.openAIAPIKey)
+End if 
+
+If (Length:C16(String:C10($client.apiKey))=0)
+	var $key:=Request:C163("Open API key"; "")
+	If ((OK=1) && (Length:C16($key)>0))
+		Form:C1466.openAIAPIKey:=$key
+	End if 
+End if 
+
+
 return $client
