@@ -4,6 +4,22 @@ Edit your current input text with AI.
 
 ![menuWritingTool](https://github.com/user-attachments/assets/aff0eba9-1094-4ac9-8097-b3badb7e4050)
 
+## Key features
+
+### rewrite 
+- proofread, rewrite
+- friendly, professiona, concise
+- summary, keyPoints, table
+
+### translate 
+
+- English, French, ...
+
+### generate 
+
+- simplifiedExplanation, detailledExplanation
+- responseGenerator, titleGenerator
+
 ## Prerequisite
 
 This project depend on private project [4D AIKit](https://github.com/4d/4d-aikit). 
