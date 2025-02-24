@@ -6,6 +6,8 @@ Edit your current input text with AI.
 
 ## Key features
 
+All done by chooising a prompt from class [WritingTool](Project/Sources/Classes/WritingTool.4dm)
+
 ### rewrite 
 - proofread, rewrite
 - friendly, professional, concise
