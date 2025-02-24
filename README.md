@@ -8,7 +8,7 @@ Edit your current input text with AI.
 
 ### rewrite 
 - proofread, rewrite
-- friendly, professiona, concise
+- friendly, professional, concise
 - summary, keyPoints, table
 
 ### translate 
