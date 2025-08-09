@@ -1,8 +1,7 @@
 {
 	"dependencies": {
 		"4D AIKit": {
-			"github": "4d/4D-AIKit",
-			"tag": "0.0.4"
+			"github": "4d/4D-AIKit"
 		},
 		"4DPop Git": {
 			"github": "vdelachaux/4DPop-Git",
